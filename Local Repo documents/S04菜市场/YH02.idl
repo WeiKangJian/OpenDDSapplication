@@ -1,0 +1,11 @@
+module YH02 {
+#pragma DCPS_DATA_TYPE "YH02::M02"
+#pragma DCPS_DATA_KEY "YH02::M02.YH02_M02_ID"
+    struct M02 {
+        long YH02_M02_ID;
+		string YH02_M02_string;
+		double YH02_M02_double;
+                string LocalTime;
+		 long ClockTime;
+    };
+};

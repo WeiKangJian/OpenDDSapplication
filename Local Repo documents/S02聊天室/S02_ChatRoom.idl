@@ -1,0 +1,16 @@
+
+
+module S02_ChatRoom {
+#pragma DCPS_DATA_TYPE "S02_ChatRoom::Message"
+#pragma DCPS_DATA_KEY "S02_ChatRoom::Message.Mtime"
+    struct Message {
+        long MessageID;
+		char MessageType;
+		string MessageInf;
+		string PublisherName;
+		string SendTime;
+		double Mtime;
+    };
+
+
+};

@@ -1,0 +1,20 @@
+
+
+module S03_TransferFile {
+#pragma DCPS_DATA_TYPE "S03_TransferFile::FileMessage"
+#pragma DCPS_DATA_KEY "S03_TransferFile::FileMessage.FileMessageID"
+
+	  typedef sequence<octet> OctetSeq;
+    struct FileMessage {
+        long FileMessageID;
+		string FileMessageTopic;
+		string PublishMessage;
+		string PublisherName;
+		long FileLength;
+		string MTime;
+		long ClockTime;
+		string CatchedFile;
+		OctetSeq OFile;  
+    };
+
+};

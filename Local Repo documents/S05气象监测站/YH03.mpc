@@ -1,0 +1,38 @@
+project(*idl): dcps {
+    // This project ensures the common components get built first.
+    TypeSupport_Files {
+        YH03.idl
+    }
+    custom_only = 1
+}
+project(*Publisher1) : dcpsexe_with_tcp {
+  exename   = publisher1
+  after    += *idl
+  TypeSupport_Files {
+    YH03.idl
+  }
+  Source_Files {
+    Publisher1.cpp
+  }
+}
+project(*Publisher2) : dcpsexe_with_tcp {
+  exename   = publisher2
+  after    += *idl
+  TypeSupport_Files {
+    YH03.idl
+  }
+  Source_Files {
+    Publisher2.cpp
+  }
+}
+project(*Subscriber) : dcpsexe_with_tcp {
+ exename   = subscriber
+ after    += *idl
+ TypeSupport_Files {
+   YH03.idl
+ }
+ Source_Files {
+   Subscriber.cpp
+   DataReaderListenerImpl.cpp
+ }
+}

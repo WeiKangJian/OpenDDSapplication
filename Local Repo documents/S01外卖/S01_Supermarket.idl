@@ -1,0 +1,25 @@
+
+
+module S01_Supermarket {
+#pragma DCPS_DATA_TYPE "S01_Supermarket::UpadateInf"
+#pragma DCPS_DATA_KEY "S01_Supermarket::UpdateInf.UpdateInfID"
+    struct UpdateInf {
+        long UpdateInfID;
+		string UpdateInfTopic;
+		string UpdateInfMessage;
+		string PublisherName;
+		string MTime;
+		long ClockTime;
+    };
+	#pragma DCPS_DATA_TYPE "S01_Supermarket::DefaultInf"
+#pragma DCPS_DATA_KEY "S01_Supermarket::DefaultInf.DefaultInfID"
+    struct DefaultInf {
+        long DefaultInfID;
+		string DefaultInfTopic;
+		string DefaultInfMessage;
+		string PublisherName;
+		string MTime;
+		long ClockTime;
+    };
+
+};

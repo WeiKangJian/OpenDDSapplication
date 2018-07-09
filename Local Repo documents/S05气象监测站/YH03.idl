@@ -1,0 +1,12 @@
+module YH03 {
+#pragma DCPS_DATA_TYPE "YH03::Observe"
+#pragma DCPS_DATA_KEY "YH02::Observe.YH03_Observe_ID"
+    struct Observe {
+        long YH03_Observe_ID;
+	string YH03_Observe_name;
+	double YH03_Observe_pm2;
+	double Yh03_Observe_tem;
+        string LocalTime;
+	long ClockTime;
+    };
+};
